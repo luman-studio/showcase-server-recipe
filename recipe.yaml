@@ -1,0 +1,21 @@
+$engine: 3
+$onesync: on
+name: Luman Studio Showcase
+description: Recipe for the Luman Studio Showcase server.
+
+tasks: 
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    ref: master
+    subpath: resources
+    dest: ./resources
+
+  # Remove the old chat resource
+  - action: remove_path
+    path: ./resources/[gameplay]/chat
+
+  # Download default server.cfg for FiveM
+  - action: download_file
+    url: https://raw.githubusercontent.com/luman-studio/showcase-server-recipe/main/server.cfg
+    path: ./server.cfg
