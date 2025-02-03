@@ -3,6 +3,9 @@ $onesync: on
 name: Luman Studio Showcase
 description: Recipe for the Luman Studio Showcase server.
 
+variables: 
+    maxClients: 10
+
 tasks: 
   # Download default CFX resources
   - action: download_github
