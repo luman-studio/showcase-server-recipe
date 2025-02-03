@@ -17,5 +17,5 @@ tasks:
 
   # Download default server.cfg for FiveM
   - action: download_file
-    url: https://raw.githubusercontent.com/luman-studio/showcase-server-recipe/refs/heads/master/server.cfg
+    url: https://raw.githubusercontent.com/luman-studio/showcase-server-recipe/master/server.cfg
     path: ./server.cfg
