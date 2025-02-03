@@ -4,7 +4,7 @@ name: Luman Studio Showcase
 description: Recipe for the Luman Studio Showcase server.
 
 variables: 
-    maxClients: 10
+    forced_maxClients: 10
 
 tasks: 
   # Download default CFX resources
